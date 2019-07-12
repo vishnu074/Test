@@ -1,0 +1,25 @@
+github.com
+username:vishnu074
+prasad.vishnu074@gmail.com
+mitigate25
+
+Regular command
+mkdir name
+cd - change dir
+
+$ python  --version
+Python 3.7.3
+which python
+$ vi firstPython.py
+touch firstPython.py
+
+Learn how to pull 
+
+Learn how to push 
+1. First click on + sign
+
+fill the form Create new repository
+click on create repository button
+drag files 
+
+2. Using gitbash

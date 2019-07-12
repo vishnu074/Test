@@ -1,0 +1,187 @@
+Range data data type is represents a sequence of number and elements in the range data type
+are immutable.  We can use range data type in 3 forms.
+Form1:range(n) it represents sequence of numbers from 0 to n-1
+
+for i in range(10):
+    print(i)
+0
+1
+2
+3
+4
+
+Form2: range(x,n), it represents sequence of numbers from x to n-1
+for i in range(1,6):
+	print(i)
+1
+2
+3
+4
+5
+Form3: range(x,n,increment), it represents sequence of numbers from x to n-1
+with incremental difference
+for i in range(100,200,20):
+	print(i)
+100
+120
+140
+160
+180
+
+Range will take parameters which are only integers.  if we pass float boolean string
+complex or other data types apart from integer, it will give type error.
+
+for i in range(1.4,5.5):
+print(i)
+
+Above command gives Type error.
+
+Loop to decrement
+for i in range(20,10,-1):
+	print(i)
+	
+Set, Whenever.  it is used to contain hetrogenious elements with out duplicates and 
+with out preservations for insertion order.  To create set {}
+
+sets are mutable in nature,  means we can change the values inside a set 
+s={10,10.5,"Vishnu",True,3+6j}
+print(s)
+s.add(96)
+print(s)
+s.remove(10)
+print(s)
+for i in s:
+    print(i)
+
+Frozen set, it is similar to a set but it is immutable.  it means we cannot add/remove 
+elements from frozen set .  It behaves similar to set, but only difference is that
+as frozen set is immutable.
+s={10,10.5,"Vishnu",True,3+6j}
+fs=frozenset(s)
+for i in fs:
+    print(i)
+print(type(fs))
+print(type(s))
+
+Dictionary
+When ever we want to keep the group fo values as key and values pair
+then we will use it.
+creating dictionary
+form 1
+d={}
+d[101]="Ankur"
+d[102]="Harish"
+d[103]="Jayaraj"
+d[104]="Vishnu"
+
+form 2
+d={101:"Ankur",102:"Harish",103:"Jayaraj",104:"Vishnu"}
+
+
+
+Note 1.Dictrionries are mutatable, means we can change values inside a dictionary
+d={}
+d[101]="Ankur"
+d[102]="Harish"
+d[103]="Jayaraj"
+d[104]="Vishnu"
+
+print(d[101])
+print(d[102])
+d[102]="Anju"
+print(d[106])
+for i in d:
+print(i,"=\t",d[i])
+
+None Datatype , it means nothing or novalue is associated or returning
+(it is similar to null) in c,c++ or java.
+
+def add(a,b):
+    print (a + b)
+print(add(4,3))
+7
+None
+
+Operators, they are special symbols which can used for different
+type of operations.  In python we have 6 different kinds of operations
+1.Arithmatic operator
+2.Relationla operator
+3.Logical operations
+4.Bitwise operator
+5.Assignment operator
+6.Special operator
+
+Arithmetic operator,  they are special symbols to perform, arithmetic operations.
+Following are different operatiort 
+1.Addition + (a +b)
+2.Substract - 
+3.Multiplication
+4.Division /
+5.Floor Division //
+6 Exponent operator ** a**2 = a*a
+7.Modules operator %, gives reminder 
+
+a=10
+b=5
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+c=a/b
+print(type(a))
+print(type(b))
+print(type(c))
+d=a//b
+print(d)
+print(type(d))
+x=10.5
+y=5
+z=x//y
+print(z)
+print(type(z))
+print(a**2)
+print(a**3
+print(a**4)
+m=13
+n=5
+print(m/n)
+print(m//n)
+print(m%n)
+#print(10/0)-> Dive eror
+#print(10//0)-> Dive eror
+#print(10%0)-> Dive eror
+
+Concatination
+print("Gensys" + "Training")
+print("Gensys" + "10")
+print(print("Gensys" + 10) Error
+
+Note 1.Normal division use the sysmbol for 2 int , will give floating point values 
+print(10/5) = 2.0
+Floor division of 2 integers will give o/p as int
+print(11,5) = 2
+3.Floor division for 2 floating point numbers will be floating point value
+print(11.5//5.5) = 2.0
+4.Floor division for  floating point and integer will be floating point value
+print(11.5//5) = 2.0
+
+5.Normal division,Floor division  or modular operations with 0 will be 0 divie ever
+
+String Concatination
+the +  Addition operator can alos be used for string string concantination
+Concatination
+print("Gensys" + "Training")
+print("Gensys" + "10")
+print(print("Gensys" + 10) Error
+String cannot be Concatinated with integer or any other datatype.  Try to do so
+with result in type error.
+print("Gensys" + 10) error
+
+String Multiplication 
+if we want to be repeat a string value for n number of times
+then we can * operator or string multiplication.
+print("genesys" * 10)
+print(10*"Geneysy")
+
+
+

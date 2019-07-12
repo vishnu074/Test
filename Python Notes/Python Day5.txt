@@ -1,0 +1,220 @@
+def left(n):
+	for i in range(1,n):
+		for j in range(1,n-i):
+			print(" ",end=" ")
+		for k in range(1,i+1):
+			print("1",end=" ")
+		print()
+left(6)
+        1 
+      1 1 
+    1 1 1 
+  1 1 1 1 
+1 1 1 1 1 
+--------------------------------------------
+def christ(n):
+	z=n-1
+	x=1
+	for i in range(1,n):
+		for j in range(1,z):
+			print(" ",end=" ")
+		for k in range(0,x):
+			print("1",end=" ")
+		print()
+		z=z-1
+		x=x+2
+
+christ(6)
+        1 
+      1 1 1 
+    1 1 1 1 1 
+  1 1 1 1 1 1 1 
+1 1 1 1 1 1 1 1 1 
+-----------------------------------------------
+def christmas(n):
+	x=1
+	for i in range(1,n):
+		for m in range(n//4):
+			print(" "*n,end=" ")
+		for j in range(1,n-i):
+			print(" ",end=" ")
+		for k in range(x):
+			print("*",end=" ")
+		x+=2
+		print()
+	for x in range(5):
+		print(" "*n*2,"||")
+	print(" "*(n-2)*2,"\_@_@_@_/")
+christmas(5)
+
+
+
+def christmas(n):
+	a=n
+	b=0
+	space=a
+	while b<a-1 and a>0:
+		print(" "*a,"*"+"*"*b)
+		a-=1
+		b+=2
+	for x in range(n//4):
+		print(" "*(space-1),"||")
+	print(" "*(space-5),"\_@_@_@_/")
+christmas(20)
+
+
+                    *
+                   ***
+                  *****
+                 *******
+                *********
+               ***********
+              *************
+                   |||
+                   |||
+                   |||
+                   |||
+                \_@_@_@_/
+------------------------------------------------------
+
+Functions, methods are  group of statements kept together
+which can be reused again and again a number of times.
+Notes: Functions can be know as methods, procedures or routines
+syntax as follows
+def <function name>(parameters)
+   statements
+   return value 
+   
+   
+   parameters -> optional
+   return is optional
+
+def abc():
+	print("Anju",end=" " )
+	print ("Weds Vishnu")
+abc()
+abc()
+for i in range(10):
+	abc()
+	
+def hello(name):
+	print("Hello Mr",name ,"How are you")
+hello("Vishnu")
+hello("SSSS")
+for i in range(10):
+	hello(i)
+
+def sprt(num):
+	return num*num
+print(sprt(5))
+print(sprt(7))
+print(sprt(23))
+
+Types of functions 
+There are two types of functions
+1. inbuilt function, these are provided by python library is called as inbuild functions.
+
+id()
+type()
+eval()
+print()
+
+2. User defined functions
+These are created by programmer is called as user defined
+
+Return statements, when ever we need output of one functions as input to another function
+then first function will return a value to second functions using return statements.
+
+def add(a,b):
+	return a+b
+def sub(a,b):
+	return a-b
+def mul(a,b):
+	print(a*b)
+mul(add(10,2),sub(10,2))
+print(sub((add(6,4),add(8,2))))
+
+Default return values
+if the programmers has not given any return values, or no return statement is given
+in the function.
+Then default return values is this function will be none.
+
+def f():
+	print("This is function with no return value")
+
+f()
+print(f())
+
+This is function with no return value
+This is function with no return value
+None
+
+Write a function to check number id even or odd
+
+def evenOdd(n):
+	if n%2 == 0:
+		print(n,"is even")
+	else:
+		print(n,"is odd")
+
+evenOdd(45)
+evenOdd(40) 
+
+def fib(n):
+	i=0
+	s=0
+	a=0
+	b=1
+	if n==1:
+		print(a)
+	elif n==2:
+		print(a)
+		print(b)
+	else:
+		print(a)
+		print(b)
+		while i< n-2:
+			s=a+b
+			print(s)
+			a=b
+			b=s
+			i=i+1
+
+fib(5)
+
+
+def fact(n):
+	if n==0:
+		return 1
+	else:
+		s=1
+		while n>0:
+			s=s*n
+			n=n-1
+		return s
+
+print(fact(0))
+print(fact(4))
+print(fact(5))
+
+Returning multiple values from a function 
+
+def sum_sub(a,b):
+	sum=a+b
+	sub=a-b
+	return sum,sub
+x,y=sum_sub(5,9)
+print("x=",x,"y=",y)
+
+def cal(a,b):
+	sum=a+b
+	sub=a-b
+	mul=a*b
+	div=a/b
+	return sum,sub,mul,div
+a,b,c,d=cal(5,9) ------First method
+print("a=",a,"b=",b,"c=",c,"d=",d)
+
+x=cal(7,6) ---Second method
+for i in x:
+	print(i)

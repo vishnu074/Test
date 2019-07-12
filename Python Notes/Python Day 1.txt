@@ -1,0 +1,146 @@
+
+
+AI 
+ML
+
+
+
+
+Type casing 
+
+converting varaibles of one data types into another data type is called as type casting.
+
+Note 
+1.type() 
+syntax type(var) -> It is used for getting data type of any variable.
+2.id()
+syntax id(var) - It is used for find out the memery address of any variable.
+
+Python provides 5 inbuilt functions to perform the type casting.
+1.int() Integer/int ().  to convert to variables of another data type to integer. 
+ Complex number cannot be converted in to int.
+2.float() a floating point value enclosed in "" as a string cannot be converted into integer.
+String values (alphabet enclosed in "") cannot be converted into integer.
+3.bool()
+4.complex
+5.String
+
+
+a=10.5
+b=5.6j
+c=true
+d=false
+e="10"
+f="10.5"
+g="ten"
+print(type(a))
+print(id(a))
+print(type(b))
+print(id(b))
+x=int(a)
+print(x)
+print(type(x))
+y=print(int(c))
+z=print(int(d))
+m=int(e)
+print(type(m))
+n=int(f) 
+print(n)
+
+o=int(g) Value error
+p=int(b) Type error
+
+Float function is used to convert variable of another data type into float. 
+Note 1. Complex cannot be covert into float.
+2. String value(Alphabet enclosed in "" as string, cannot be converted into float.
+
+Complex function, it is used to convert variables of one data type 
+or any data type into complex data type.  There two forms in which we can use complex functions
+print(complex(10))
+print(complex(10.5))
+print(complex(True))
+print(complex(False))
+print(complex("10"))
+print(complex("10.5"))
+
+print(complex(10,2))
+print(complex(True,False))
+
+#form 1 :- complex(x)
+#form 2 :- complex(x,y)
+Note 1. A string values(Alphabet enclosed in "" as string cannot be converted into complex numbers
+
+Boolean it converts veriables of any data type into True/False value.
+Note 1. Following four values will always give false
+print(bool(0))
+print(bool(0.0))
+print(bool(""))
+print(bool(0+0j))
+Except this four values, any value type casted with boolean function 
+will give true
+print(bool(1))
+print(bool(1.0))
+print(bool(10))
+print(bool(10.5))
+print(bool("Genesys"))
+print(bool(5 + 8j))
+print(bool(-5))
+print(bool("True"))
+print(bool("False")) 
+
+
+String () it used to convert variable of any data type into String type
+All values of all data types can be converted into string
+a=10
+b=str(a)
+print(b)
+print(type(b))
+print(type(a))
+c=True
+d=False
+print(str(c))
+print(str(d))
+e=4+8j
+f=str(e)
+print(f)
+print(type(f))
+g=10.5
+h=str(g)
+print(type(h))
+
+Byte types 
+Array of values 
+
+Byte Array 
+is similar to bytes, but only difference is that is not immutable.
+Means values inside a byte array can be changed later.
+
+
+x=[10,20,30,40,50]
+b=bytearray(x)
+for i in b:
+print(i)
+b[0]=100
+print(i)
+
+print(i)
+
+when ever we want to group of hetrogenious values where insertion order preserve
+then we will list
+properties of list, 
+Insert order is preserved.
+hetrogenious objects are allowed.
+Duplicates are allowed.
+
+growable in nature 
+it should be enclosed in [].
+
+x={10,20,3,0,40,50]
+y=["vishnu",20,3.6,True,5+6j]
+for i in y
+print idy[3]=False
+print(y)
+Y.append(40).
+
+Tuple is simpilare to list, but it is created with "( )" and tuple are immutable.
+.We cannot add/remove or change values  in tuple

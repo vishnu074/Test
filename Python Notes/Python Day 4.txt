@@ -1,0 +1,336 @@
+In python, input functions as input statements which can be used for taking values
+during program executions from user at the point of executions
+
+Return type of values taken from input functions will be of type String
+a=input("Enter the value")
+print(type(a))
+
+Enter the value57jjjj
+<class 'str'>
+
+If we are taking any integer, floating point or any other data type
+then we should convert them from string to particular data type in whichwe need them
+using type casting.
+x=int(input("Enter First value"))
+y=int(input("Enter second value"))
+mul=x*y
+print(mul)
+
+Enter First value56
+Enter second value8
+448
+
+x=float(input("Enter First value"))
+y=float(input("Enter second value"))
+fdiv=x//y
+print(fdiv)
+Enter First value5.8
+Enter second value2
+2.0
+
+name=input("Enter your name")
+age=input("Enter age")
+sal=input("Enter salary")
+print("Name is ",name," Age is ",age," Salary ",salary)
+
+Taking multivalue input in a single line
+a,b,c=2,4,6
+print(a)
+print(b)
+print(c)
+x,y,z=[int(x) for x in input("Enter values").split(" ")]
+print(x)
+print(y)
+print(z)
+sum=x+y+z
+print(sum)
+
+x,y,z=[float(x) for x in input("Enter values").split(";")]
+print(x)
+print(y)
+print(z)
+sum=x+y+z
+print(sum)
+
+The split functions is used with input function to differentiate multivalues
+given as a input
+
+By default if no arguments are specified then the input values
+should be given with difference of one space between them
+
+if we want to enter the values with ",",":" or any other special character
+between them, then the specific character has to be passed as string argument
+(with in " or ') to split function.
+
+split()
+1. Default value <Space>
+2.comma spilt(',')
+3.Semicolon split(';')
+4.colon split(':')
+
+Eval Function 
+it is used to take mathmatical string and give its value
+s=eval("10+20+30")
+print(s)
+s1=eval("10*2/3+4")
+print(s)
+
+Entering a list to eval to function
+l=eval(input("Enter members of the list"))
+print(type(l))
+print(l)
+
+Enter members of the list[10,20]+[10*4,30]
+<class 'list'>
+[10, 20, 40, 30]
+
+Print 
+functions
+form1: print without any arguments
+when ever we use print functions with out arguments, it gives a new lines
+
+print("Hello")
+print()
+print("Hello")
+
+form2:Print strings
+
+print("Hello world")
+print("Hello\nworld")
+print("Hello\tworld")
+print("Hello" *5)
+print("Hello"+"world")
+print("Hello","world")
+
+form3:print multiple variables
+a,b,c=2,4,5
+print("Values are ",a,b,c)
+print("Values are ",a,b,c,sep=",")
+print("Values are ",a,b,c,sep=";")
+
+Note sep arguments is used to seperate the different values printed in the output.
+by default all the variable printed will have single space between them.
+
+
+if we want to seperate them with coma, or semi colon or any other character
+then we should mention it sep arguments 
+
+form4: print with end arguments
+Genarally print function will always end with newline.  But if we want print function to end
+with space, or semicolon or anything other character then we can specify it in end argument
+print("Hello",end=" ")
+print("Genesys ",end=" ")
+print("Trainings ")
+
+Hello Genesys  Trainings 
+
+form5 : print function for objects 
+Using print function we can print list, tuples, dictionaries, sets
+
+l=[10,10.5,True,"Genesys"]
+t=[10,10.5,False,"Trainings"]
+print(l)
+print(t)
+
+[10, 10.5, True, 'Genesys']
+[10, 10.5, False, 'Trainings']
+
+form6: Print functions with string and variables 
+name="Vishnu"
+age=30
+salary=23.00
+institute="Genesys"
+print("My name is ",name)
+print("My age is ",age)
+print("My salary is ",salary," and Studied at ",institute)
+
+form7: Print functions with formatted string
+int -> %i %data
+float -> %f
+String -> %s1
+
+print("My name is %s"%name)
+print("My age is %i"%age)
+print("I earn rs %f and I studied %s"%(salary,institute))
+
+form8: Print functions with replacement operator
+print("My name is {0}".format(name))
+print("My age is {x}".format(x=age))
+print("I earn rs {0} and I studied {1}".format(salary,institute))
+print("I earn rs {x} and I studied {y}".format(x=salary,y=institute))
+
+
+Flow control statements
+1. Conditional statements
+if , if else, if elif else
+2. loops statements
+if for, while
+3. Transfer statements
+ Break, continue, pass
+
+in contional, are of 3 types 
+1.if statements
+if(cond):
+	s
+a=int(input("Enter value"))
+if(a>10):
+	print("Double of ",a," is ",a*2)
+print("a=",a)
+
+2.if else
+if(cond):
+	s
+else:
+	s2
+
+a=int(input("Enter first value"))
+b=int(input("Enter second value"))
+if(a>b):
+	print(a," is greater than"b)
+else 
+	print(b," is greater than"a)
+
+a=int(input("Enter a number"))
+if(a%2==0):
+	print(a," is even ")
+else 
+	print(a," is odd ")
+
+3.if elif else
+if(cond):
+	s
+elif(cond):
+	s2
+else s3
+
+
+a=int(input("Enter first value"))
+b=int(input("Enter second value"))
+c=int(input("Enter third value"))
+if(a>b and a>c):
+	print(a," is bigger number")
+elif(b>c):
+	print(b," is bigger number")
+else:
+    print(c," is bigger number")
+
+Loops are used to repeat a group of statements again and again a number of times 
+in python we have 2 kinds of loops
+1.for loops
+it is used when ever there is sequences and we want to perform somthing
+with every member in the sequence.
+s="Vishnu prasd"
+for i in s:
+	print(i);
+
+l=[10,20,30,40,5,0]
+for x in l:
+	print(x//10)
+
+sum=0
+for x in l:
+	sum+=x
+print(sum)
+
+print even numbers from 1 .. 20
+for i in range(1,21):
+	if(i%2==0):
+		print(i)
+
+
+print even numbers from 20 ..1
+for i in range(20,1,-1):
+	if(i%2!=0):
+		print(i)
+
+While loops, we use while when ever there is condition 
+and we want to execute loops until the condition is false.
+n=1
+while n<=10:
+	print(n)
+	n+=1
+n1=10
+while n1>=1:
+	print n1
+	n1-=1
+
+Gives promt to enter name till we enter genesysv
+name=input("Enter name")
+while name!="genesys":
+	name=input("Enter name")
+print "Thanks for confirmation"
+
+Nested loops
+When ever there is a loop inside then it is called as nested loops.
+
+if there are 2 loops then outter loops shows number of rows and inner loops
+shows the number of columns
+for i in range(1,5): rows
+	for j in range(1,5): columns
+
+Pattern programs
+
+Pattern1:
+for i in range(1,5): rows
+	for j in range(1,5): columns
+		print(i,end=" ")
+	print()
+
+1 1 1 1
+2 2 2 2 
+3 3 3 3
+4 4 4 4
+
+
+Pattern2:
+for i in range(1,5): rows
+	for j in range(1,5): columns
+		print(j,end=" ")
+	print()
+1 2 3 4
+1 2 3 4
+1 2 3 4
+1 2 3 4
+
+Pattern3:
+for i in range(1,5): rows
+	for j in range(1,i): columns
+		print(j,end=" ")
+	print()
+1
+1 2
+1 2 3
+1 2 2 3 4		
+
+Pattern4:
+sum=1
+for i in range(1,5): rows
+	for j in range(1,i): columns
+		print(sum,end=" ")
+		sum+=1
+	print()
+1 
+2 3
+4 5 6
+7 8 9 10
+
+Pattern5:
+for i in range(1,5):
+	for j in range(1,5):
+		print("*",end=" ")
+	print()
+
+* * * *
+* * * *
+* * * *
+* * * *
+
+Pattern5:
+for i in range(1,5):
+	for j in range(1,i+1):
+		print("*",end=" ")
+	print()
+*
+* *
+* * *
+* * * *

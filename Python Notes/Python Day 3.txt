@@ -1,0 +1,242 @@
+Relational operators There are 6 different kinds of relational operators>
+> -> Greather than
+< -> Less than
+>= -> Greather than or equals to
+<= -> less than or equals to
+== -> equals
+!= -> Not equals
+
+a=10
+b=20
+print("a>b is ",a>b)
+print("a<b is ",a<b)
+print("a>=b is ",a>=b)
+print("a<=b is ",a<=b)
+x=30
+y=30
+print("x>y is ",x>y)
+print("x<y is ",x<y)
+print("x>=y is ",x>=y)
+print("x<=y is ",x<=y)
+
+a="Genesys"
+b="Genesys"
+print("a>b is ",a>b)
+print("a<b is ",a<b)
+print("a>=b is ",a>=b)
+print("a<=b is ",a<=b)
+
+print(True>True)
+print(True<True)
+print(True>=True)
+print(True<=True)
+print(True>False)
+print(10>True)
+
+Operator chaining
+print(10<20)
+print(10<20<30)
+print(10<20<30<40)
+print(10<20<30<40>15)
+print(10<20<30<40>50) 
+
+Equality operators
+There 2 types of equality operators
+== -> Equals, if both operands are same it returns True other view False
+!= -> Not Equals, if both operands are no same it returns True other view False
+
+a=10
+b=10
+print(a==b)
+print(a!=b)
+print(10!=20
+
+a="Genesys"
+b="GENESYS"
+print("a==b is ",a==b) True
+print("a!=b is ",a!=b) False
+
+print(1==True)
+print(0==False)
+print(10!=True)
+print(10!=False)
+
+Logical operators
+there are 3 types of logical operators
+1.And
+2.OR
+3.Not
+Boolean behaviour for logical operators 
+And
+print(True and True) -> True
+print(True and False) -> False
+print(False and True) -> False
+print(False and False) -> False
+
+a=10>2
+b=6!=5
+print(a and b) True
+c=4<2
+print(a and c) False
+print(c and a) False
+d=6==7
+print(c and d) False
+
+a=10>2
+b=6!=5
+c=4<2
+d=6==7
+print(a or b) True
+print(a or c) True
+print(d or b) True
+print(c or d) False
+
+a=10>2
+b=6!=5
+c=4<2
+d=6==7
+print(not a) True
+print(not b) True
+print(not c) True
+print(not d) False
+
+
+
+
+OR
+print(True or True) -> True
+print(True or False) -> True
+print(False or True) -> True
+print(False or False) -> False
+
+Not
+print(not True) -> False
+print(not False) -> False
+
+Non boolean behaviours
+There are only 4 values which are considered as false 0,0.0,0+0j,""
+apart from this 4 values every thing True
+
+print(0,0.0,0+0j,"") False
+print(5,12.0,4+4j,"KKK") True
+
+
+X and Y
+if x is 0 or false , return x othervise y.
+print(0 and 10)  0
+print(10 and 0)  0 
+print(10 and 20) 20
+print(20 and 10) 10
+X OR Y
+if X is true or non 0 or non emty String then, return X otherwise Y
+print(0 or 10)  10
+print(10 or 0)  10
+print(10 or 20) 10
+print(20 or 10) 20
+
+Not Operator
+If value is non 0 or not emty String then, result is false other wise 
+for any false value or emty string, the result will true.
+
+
+Bitwise operators, it is used to do operations in bits
+There are 6 types of bitwise operator
+& And
+| OR 
+~ Not
+^ Xor
+<< Left shift
+>> Right Shift
+
+Only integer and Boolean values can be used with bitwize operator
+
+Bit wise And: if both bits are 1, then result will 1, other wise 0
+A B R
+0 0 0
+0 1 0
+1 0 0
+1 1 1
+
+Bit OR : if both bits are 0, then result will 0, other wise 1
+A B R
+0 0 0
+0 1 1
+1 0 1
+1 1 1
+
+Bit Not: if bit is 0, then result is 1 and if bit is 1 then result is 0  
+
+Bit wise XOR if both bits are same(0,0 or 1,1) then result is 0 and
+if bits are different(1,0 or 0,1) then result is 1
+
+Left shift operator, in this we will remove bits from left and 0s at rights
+Example 5<<2
+0000 0101  Add 2 0s as bits.
+0001 0100
+
+Right shift operator, in this we will remove bits from right and 0s at lefts
+Example 5>>2
+0000 0101  Add 2 0s as bits are right
+0000 0001
+
+
+
+
+
+
+
+a=5
+b=4
+print(a&b) 4 
+| OR  5
+~ Not 1
+^ Xor -6 
+<< Left shift
+>>
+
+
+0000 0100
+0010 0000
+
+0000 0010
+
+
+Following are different assignment operators
++=,  x+= 5 is  x= x + 5
+-=,   x= x - 5
+*=,   x= x * 5  
+/=,   x= x / 5
+//=,   x= x // 5
+**=,   x= x - 5
+&=,   x= x - 5
+|=, x|= 5 is X = X|5
+^=,
+-----------------------------------
+x=5
+x+=10
+print(x) 15
+x-=5
+print(x) 10
+X*=3 
+print(x) 30
+X/=3 
+print(x) 10.0
+X//=2 
+print(x) 5.0
+X**=2 
+print(x) 25.0
+
+a=10
+a&=5
+print(a)
+b=4
+b|=4
+print(b)
+x=5
+y=8
+x^=y
+print(x)
+
+
+
+
